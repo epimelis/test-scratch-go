@@ -1,6 +1,6 @@
 go build -o ppp .
 CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o ppp .
-docker build -t epimelis1/scratch-go -f Dockerfile.scratch .
-docker run --rm -it epimelis1/scratch-go
-docker push epimelis1/scratch-go
+docker build -t epimelis1/test-scratch-go -f Dockerfile.scratch .
+docker run --rm -it epimelis1/test-scratch-go
+docker push epimelis1/test-scratch-go
 
